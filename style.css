@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: #823F3F;
+  min-width: 100vw;
+  max-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  font-family: "Miniver", "Arial";
+
+}
+
+nav {
+  background-color:burlywood;
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+
+}
