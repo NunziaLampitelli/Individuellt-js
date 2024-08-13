@@ -1,4 +1,4 @@
-// I got a key from the google api site.
+// I got a key from the google book api site.
 
 const API_KEY = "AIzaSyBgXLpVU0ypFCl4qpu_bLMMeGXjBLLDiqc";
 
