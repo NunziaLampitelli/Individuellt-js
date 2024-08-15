@@ -47,10 +47,10 @@ nav a {
   color: white;
   margin-right: 2vw;
   text-shadow: 
-     1px 1px 0 #8a8a8a2f,
-     -1px -1px 0 #8a8a8a2f, 
-     1px -1px 0 #8a8a8a2f, 
-     1px 1px 0 #8a8a8a2f; 
+    1px 1px 0 #8a8a8a2f, /* Ombra nera a destra e in basso */
+    -1px -1px 0 #8a8a8a2f, /* Ombra nera a sinistra e in alto */
+    1px -1px 0 #8a8a8a2f, /* Ombra nera a destra e in alto */
+    -1px 1px 0 #8a8a8a2f; /* Ombra nera a sinistra e in basso */
 }
 nav a:visited {
   text-decoration: none;
@@ -58,7 +58,7 @@ nav a:visited {
 }
 
 main {
-  display: flex;
+	display: flex;
 }
 
 .random-img {
@@ -71,69 +71,13 @@ main {
   background-repeat: repeat;
 }
 
-article {
-  font-family: "Architects Daughter", cursive;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.results-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.book-result {
-  display: flex;
-  align-items: flex-start; 
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.book-details-container {
   padding: 1rem;
-  gap: 1rem; 
 }
 
-.book-result img {
-  width: 120px; 
-  height: 180px; 
-  object-fit: cover; 
-  border-radius: 5px;
-}
-
-.book-info {
-  flex: 1; 
-  display: flex;
-  flex-direction: column;
-}
-
-.book-info h3 {
-  margin-top: 0;
-}
-
-.book-info p {
-  margin: 0.5rem 0;
-}
-
-.read-books-container {
-  margin-left: 2rem;
-}
-
-.read-book {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 1rem;
-  gap: 1rem;
-  cursor: pointer;
-}
-
-.read-book img {
-  width: 80px;
-  height: 120px;
+.book-details-container img {
+  width: 200px;
+  height: 300px;
   object-fit: cover;
   border-radius: 5px;
-}
-
-.read-book-info {
-  flex: 1;
 }
