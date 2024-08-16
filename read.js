@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		document.getElementById("removeBtn").addEventListener("click", () => {
 			removeFromReadBooks(book.title);
-			window.location.href = "library.html"; // Redirect back to library
+			window.location.href = "library.html"; // Redirect back to library if i remove the book
 		});
 	}
 });
