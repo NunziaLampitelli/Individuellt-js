@@ -1,3 +1,4 @@
+//function to create the content for every result that is found in the search.html with the selected book info + remove button 
 document.addEventListener("DOMContentLoaded", function () {
 	const bookDetailsContainer = document.getElementById("bookDetails");
 	const book = JSON.parse(localStorage.getItem("selectedBook"));
@@ -11,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <p><strong>Publishing date:</strong> ${book.publishedDate}</p>
             <p><strong>Pages:</strong> ${book.pageCount}</p>
             <p><strong>Category:</strong> ${book.categories.join(", ")}</p>
-            <button id="removeBtn">Remove from Read Books</button>
-        `;
+            <button id="removeBtn">Remove from Read Books</button>`
+						;
 
 		document.getElementById("removeBtn").addEventListener("click", () => {
 			removeFromReadBooks(book.title);
@@ -24,6 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // function to remove books from the read ones
 function removeFromReadBooks(title) {
 	let readBooks = JSON.parse(localStorage.getItem("readBooks")) || [];
-	readBooks = readBooks.filter((book) => book.title !== title);
+	readBooks = readBooks.filter((book) => book.title !== title); // this lines filters the book if they're still in the list
 	localStorage.setItem("readBooks", JSON.stringify(readBooks));
 }
